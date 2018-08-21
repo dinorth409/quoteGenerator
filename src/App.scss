@@ -1,0 +1,105 @@
+
+body {
+  background-color: #333;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 400;
+  transition: background-color 2s;
+}
+
+div {
+  position: relative;
+}
+
+.footer {
+  color: #fff;
+  text-align: center;
+  margin: 15px auto 30px auto;
+  display: block;
+  font-size: 0.8em;
+  width: 450px;
+  a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.quote-box {
+  background-color: #fff;
+  display: table;
+  border-radius: 3px;
+  position: relative;
+  width: 450px;
+  height: auto;
+  padding: 40px 50px;
+  .quote-text {
+    i {
+      font-size: 1.0em;
+      margin-right: 0.4em;
+      transition: color 2s;
+    }
+    #text {
+      transition: opacity 0.5s;
+    }
+    text-align: center;
+    width: 450px;
+    height: auto;
+    font-weight: 500;
+    font-size: 1.75em;
+    transition: color 2s;
+    float: left;
+    word-wrap: break-word;
+  }
+  .quote-author {
+    height: auto;
+    width: 450px;
+    text-align: right;
+    padding-top: 20px;
+    clear: both;
+    font-size: right;
+    transition: color 2s, opacity 0.5s;
+  }
+  .buttons {
+    margin: auto;
+    width: 450px;
+    display: block;
+    .button {
+      border: none;
+      height: 38px;
+      color: #fff;
+      border-radius: 3px;
+      padding: 8px 18px 6px 18px;
+      margin-top: 30px;
+      outline: none;
+      font-size: 0.85em;
+      transition: background-color 2s;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.9;
+      }
+      &#new-quote {
+        float: right;
+      }
+      &#tweet-quote, &#tumblr-quote, &#facebook-quote {
+        float:left;
+        padding:0px;
+        padding-top:8px;
+        text-align:center;
+        font-size:1.2em;
+        margin-right:5px;
+        height:30px;
+        width:40px;
+      }
+      &#back {
+        float: left;
+        clear: right;
+        margin-right: 80px;
+      }
+    }
+  }
+}
